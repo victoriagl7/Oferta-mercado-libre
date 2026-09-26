@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Especial Mercado Libre | Código G5LCBU-CWDS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        :root {
+            --ml-yellow: #fff159;
+            --ml-blue: #2d3277;
+            --ml-light-blue: #3483fa;
+            --ml-green: #00a650;
+            --ml-gray-bg: #edd01d;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --card-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--ml-yellow);
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--ml-blue);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .badge {
+            background-color: rgba(0,0,0,0.08);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        p.subtitle {
+            color: var(--text-gray);
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+
+        .code-box {
+            background: #f8f9fa;
+            border: 2px dashed #0002;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .code-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+            font-weight: 700;
+        }
+
+        .code-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--ml-blue);
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background-color: var(--ml-light-blue);
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .btn-secondary {
+            background-color: #e3edfb;
+            color: var(--ml-light-blue);
+        }
+
+        .steps-container {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .steps-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .step-num {
+            background: var(--ml-blue);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 12px;
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+        }
+
+        .toast.show {
+            visibility: visible;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 30px; opacity: 1;}
+        }
+
+        @keyframes fadeout {
+            from {bottom: 30px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-gray);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="https://meli.la/2v3ukJp" class="logo" target="_blank" rel="noopener">
+                <i class="fa-solid fa-handshake"></i> Mercado Libre
+            </a>
+            <span class="badge"><i class="fa-solid fa-shield-halved"></i> Compra Protegida</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h1>¡Oferta Exclusiva Encontrada!</h1>
+            <p class="subtitle">Accedé a esta publicación directamente desde la App o tu navegador.</p>
+
+            <div class="code-box">
+                <span class="code-title">Código de Búsqueda</span>
+                <span class="code-value" id="searchCode">G5LCBU-CWDS</span>
+                <button class="btn btn-secondary" onclick="copyCode()">
+                    <i class="fa-regular fa-copy"></i> Copiar Código
+                </button>
+            </div>
+
+            <a href="https://meli.la/2v3ukJp" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-external-link"></i> Ir Directo al Producto
+            </a>
+        </div>
+
+        <div class="card steps-container">
+            <h2 class="steps-title"><i class="fa-solid fa-mobile-screen-button"></i> ¿Cómo usar el código?</h2>
+            
+            <div class="step-item">
+                <div class="step-num">1</div>
+                <div> Copiá el código <strong>G5LCBU-CWDS</strong> tocando el botón de arriba.</div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">2</div>
+                <div>Abrí la aplicación de <strong>Mercado Libre</strong> en tu celular.</div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">3</div>
+                <div>Pegá el código en la barra de búsqueda y presioná buscar. ¡Listo!</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Publicación original en Mercado Libre Argentina.</p>
+    </footer>
+
+    <div id="toast" class="toast">¡Código copiado al portapapeles!</div>
+
+    <script>
+        function copyCode() {
+            const code = document.getElementById('searchCode').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                const toast = document.getElementById('toast');
+                toast.className = 'toast show';
+                setTimeout(() => { 
+                    toast.className = toast.className.replace('toast show', 'toast'); 
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
